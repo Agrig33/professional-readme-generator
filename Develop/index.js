@@ -18,26 +18,61 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'installation',
+        message: 'What command should be run to install dependencies?',
+        default: 'npm 1'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Please provide usage details',
+    },
+    {
+        type: 'input',
         name: 'github',
         message: 'Please enter your Github username'
     },
     {
         type: 'list',
         name: 'license',
-        message: 'Please select a license for your project'
+        message: 'Please select a license for your project',
         choices: ['MIT', 'Apache', 'GPL v3', 'BSD 3', 'None']
     },
     {
-        
+        type: 'input',
+        name: 'test',
+        message: 'What command should be run to do tests?',
+        default: 'npm test'
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Please provide info on how a user can contribute ',
+    },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'Please provide your email address',
     }
 ];
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    const readmeContent = generateMarkdown(data);
+        fs.writeToFile(fileName, readmeContent);
+        console.log('ReadMe created successfully!')
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((inquirerResponses) => {
+        console.log()
+    }
+    
+    
+    )
+}
 
 // Function call to initialize app
 init();
