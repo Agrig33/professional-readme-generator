@@ -24,7 +24,7 @@ An application that can quickly and easily create a professional README file by 
 Invoke the application by using this command: \`node index.js\`
 
 ## Video Tutorial
-https://drive.google.com/file/d/1MMKqAwuCfHBhO0p9YF9F52NevIhmhPXX/view?usp=sharing
+https://app.screencastify.com/v3/watch/VgqqQb1cQwVKY9SkCkW5
 
 
 ## Contributions
