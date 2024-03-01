@@ -29,8 +29,17 @@ Invoke the application by using this command: \`node index.js\`
 2. Make your changes and revisions
 3. Submit a pull request
 
-## Link to Application
 
-## Link to Github Repository
+## Link to Github Repository: https://github.com/Agrig33/professional-readme-generator
 
 ## References
+
+https://choosealicense.com/
+
+https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+
+https://www.npmjs.com/package/inquirer/v/8.2.4
+
+https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
+
+https://shields.io/badges/dynamic-json-badge
