@@ -19,9 +19,13 @@ An application that can quickly and easily create a professional README file by 
   3. Install dependencies - 'nmp i inquirer@8.2.4'
   4. Run application - 'node index.js'
 
-  ## Usage
+## Usage
 
 Invoke the application by using this command: \`node index.js\`
+
+## Video Tutorial
+https://drive.google.com/file/d/1MMKqAwuCfHBhO0p9YF9F52NevIhmhPXX/view?usp=sharing
+
 
 ## Contributions
 

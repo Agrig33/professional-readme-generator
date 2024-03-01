@@ -20,7 +20,7 @@ const questions = [
         type: 'input',
         name: 'installation',
         message: 'What command should be run to install dependencies?',
-        default: 'npm 1'
+        default: 'npm install'
     },
     {
         type: 'input',
@@ -63,22 +63,22 @@ function writeReadme(fileName, data) {
         if (err) {
             console.error('Oops something went wrong, Readme not created:', err);
         } else {
-            console/log(`${ReadMe} created successfully!`);
+            console.log(`${ReadMe} created successfully!`);
         }
 });
     
     
     
-    // // const readmeContent = generateMarkdown(data);
-    //     fs.writeToFile('README.md', readmeContent);
-    //     console.log('ReadMe created successfully!')
+    // const readmeContent = generateMarkdown(data);
+        fs.writeToFile('README.md', readmeContent);
+        console.log('ReadMe created successfully!')
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {
         console.log('Initializing app...');
-    }
+    });
 }
 
 // Function call to initialize app
