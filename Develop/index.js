@@ -66,10 +66,7 @@ function writeReadme(fileName, data) {
             console.log(`${ReadMe} created successfully!`);
         }
 });
-    
-    
-    
-    // const readmeContent = generateMarkdown(data);
+ const readmeContent = generateMarkdown(data);
         fs.writeToFile('README.md', readmeContent);
         console.log('ReadMe created successfully!')
 }
