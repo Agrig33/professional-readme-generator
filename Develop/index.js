@@ -36,7 +36,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Please select a license for your project',
-        choices: ['MIT', 'Apache', 'GPL v3', 'BSD 3', 'None']
+        choices: ['MIT', 'Apache', 'GNU GPLv3','None']
     },
     {
         type: 'input',
@@ -57,19 +57,19 @@ const questions = [
 ];
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    const readmeContent = generateMarkdown(data);
-        fs.writeToFile(fileName, readmeContent);
-        console.log('ReadMe created successfully!')
-}
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {
+//     const readmeContent = generateMarkdown(data);
+//         fs.writeToFile('README.md', readmeContent);
+//         console.log('ReadMe created successfully!')
+// }
 
-// TODO: Create a function to initialize app
-function init() {
-    inquirer.prompt(questions).then((inquirerResponses) => {
-        console.log('Initializing app...');
-    }
-}
+// // TODO: Create a function to initialize app
+// function init() {
+//     inquirer.prompt(questions).then((inquirerResponses) => {
+//         console.log('Initializing app...');
+//     }
+// }
 
 // Function call to initialize app
 init();
