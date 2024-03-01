@@ -33,7 +33,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-    return `## License
+    return `## License`
   } else {
     return '';
   }
@@ -42,9 +42,57 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `${renderLicenseBadge(data.license)}
-  }
+  # ${data.title}
 
-`;
+  ## Description
+  ${data.description}
+
+## Table of Contents
+
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Tests](#tests)
+  - [Contributing](#contributing)
+  - [Questions](#questions)
+
+## Installation
+
+  1. Clone the repository 
+  2. Go to project directory 
+  3. Install dependencies - 'nmp i inquirer@8.2.4'
+  4. Run application - 'node index.js'
+
+## Usage
+
+Invoke the application by using this command: \`node index.js\`
+
+${data.usage}
+
+${renderLicenseSection(`${data.license}`)}
+
+## Tests
+
+To run tests, run the following command: ${data.Tests}
+
+## Contributions
+
+1. Create a new branch for your changes
+2. Make your changes and revisions
+3. Submit a pull request
+
+## Questions
+
+If you have any questions, please feel free to contact me:
+
+Email: [${data.email}](emailto:${data.email})
+
+Github Profile: [${data.github}](https://github.com/${data.github})
+
+Link to Repository: [${data.githubUrl}](https://github.com/${data.github}/${data.githubUrl})
+
+
+  `;
 }
 
 module.exports = generateMarkdown;
